@@ -1,6 +1,7 @@
 package com.example.lorin.helloworld_coretest;
 
 import android.app.Application;
+import android.util.Log;
 
 import com.example.lorin.helloworld_coretest.tool.CustomCrashHandler;
 import com.taobao.weex.InitConfig;
@@ -23,7 +24,9 @@ public class CustomApplication extends Application {
         LitePalApplication.initialize(this);
 
         WXEnvironment.addCustomOptions("appName", "TBSample");
-        WXSDKEngine.initialize(this,null);
+        WXSDKEngine.initialize(this, null);
+
+        Log.d("Tag","Git Test");
 
     }
 
