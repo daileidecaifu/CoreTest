@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="com.example.lorin.helloworld_coretest.object.SettingDescription"></import>
+
+        <variable
+            name="setting"
+            type="SettingDescription"></variable>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="39dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:text="@{setting.title}"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:text="返回"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:id="@+id/back"
+                android:textColor="#ffffff"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#903435"
+            android:onClick="clic"
+            android:text="@{setting.setting1}"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/testErrorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#CCCC33"
+            android:onClick="click"
+            android:text="@{setting.setting2}"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/testIntentButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#543453"
+            android:onClick="click"
+            android:text="@{setting.setting3}"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/DBTestButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#185475"
+            android:onClick="click"
+            android:text="@{setting.setting4}"
+            android:textColor="#ffffff" />
+        <Button
+            android:id="@+id/WeexButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#763333"
+            android:onClick="click"
+            android:text="@{setting.setting5}"
+            android:textColor="#ffffff" />
+
+        <com.example.lorin.helloworld_coretest.canvas.CircularProgressBar
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#00000000" />
+
+    </LinearLayout>
+
+</layout>
