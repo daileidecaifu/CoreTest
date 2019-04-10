@@ -29,7 +29,7 @@ import java.util.List;
  */
 public class MainActivity extends Activity {
 
-  private String debugApkDir =
+  private String DebugApkDir =
       Environment.getExternalStorageDirectory().getAbsolutePath() + "/NotificationDemo";
   private TextView textViewErro;
   private CrashDBManager crashDBManager = null;
