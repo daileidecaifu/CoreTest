@@ -44,7 +44,7 @@ public class MainActivity extends Activity {
     File dir = Environment.getExternalStorageDirectory();
     if (dir.exists()) {
       Log.d("CoreTest",
-          Environment.getExternalStorageState() + "can read:" + dir.canRead() + "can write:" + dir
+          Environment.getExternalStorageState() + "!can read:" + dir.canRead() + "can write:" + dir
               .canWrite());
     }
 
