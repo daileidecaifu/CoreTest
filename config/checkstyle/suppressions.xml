@@ -14,6 +14,8 @@
 
     <!--过滤指定文件夹-->
     <suppress checks="[a-zA-Z0-9]*" files="[\\/]orm[\\/]" />
+    <suppress checks="[a-zA-Z0-9]*" files="[\\/]test[\\/]" />
+    <suppress checks="[a-zA-Z0-9]*" files="[\\/]androidTest[\\/]" />
 
     <!--<suppress checks="ParameterName"-->
         <!--files="[\\/]dto[\\/]bean[\\/]MoviePriceBean\.java$|[\\/]dto[\\/]pay[\\/]PaySDKDataBean\.java$|[\\/]login[\\/]bean[\\/]UserInfoTokenBean\.java$" />-->
