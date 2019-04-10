@@ -36,7 +36,7 @@ import java.util.logging.Logger;
 
 public class MainActivity extends Activity {
     private String debug_APK_dir = Environment.getExternalStorageDirectory().getAbsolutePath() + "/NotificationDemo";
-    private TextView textViewError;
+    private TextView textViewErro;
     private CrashDBManager crashDBManager = null;
 
     @Override
