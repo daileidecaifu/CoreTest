@@ -29,10 +29,10 @@ import java.util.List;
  */
 public class MainActivity extends Activity {
 
-  private String DebugApkDir =
+  private String debugApkDir =
       Environment.getExternalStorageDirectory().getAbsolutePath() + "/NotificationDemo";
   private TextView textViewErro;
-  private CrashDBManager crashDBManager = null;
+  private CrashDBManager CrashDBManager = null;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -87,11 +87,11 @@ public class MainActivity extends Activity {
   }
 
   private void initAPKDir() {
-    DebugApkDir =
+    debugApkDir =
         Environment.getExternalStorageDirectory().getAbsolutePath() + "/apk/download/";
     // 保存到SD卡路径下
-    File destDir = new File(DebugApkDir);
-    CLogUtil.e("TAG1", DebugApkDir);
+    File destDir = new File(debugApkDir);
+    CLogUtil.e("TAG1", debugApkDir);
     if (!destDir.exists()) {
       // 判断文件夹是否存在
       destDir.mkdirs();
@@ -147,13 +147,13 @@ public class MainActivity extends Activity {
 
       case R.id.DBTestButton:
 
-        if (null == crashDBManager) {
-          crashDBManager = new CrashDBManager(MainActivity.this);
+        if (null == CrashDBManager) {
+          CrashDBManager = new CrashDBManager(MainActivity.this);
         }
-        List<CrashMarkManual> crashMarkManuals = crashDBManager.query();
+        List<CrashMarkManual> crashMarkManuals = CrashDBManager.query();
 
-        crashDBManager.closeDB();
-        crashDBManager = null;
+        CrashDBManager.closeDB();
+        CrashDBManager = null;
         break;
 
 //      case R.id.WeexButton:
