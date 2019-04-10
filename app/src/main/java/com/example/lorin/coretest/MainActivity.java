@@ -29,7 +29,7 @@ import java.util.List;
  */
 public class MainActivity extends Activity {
 
-  private String debugApkDir =
+  private String DebugApkDir =
       Environment.getExternalStorageDirectory().getAbsolutePath() + "/NotificationDemo";
   private TextView textViewErro;
   private CrashDBManager crashDBManager = null;
@@ -87,11 +87,11 @@ public class MainActivity extends Activity {
   }
 
   private void initAPKDir() {
-    debugApkDir =
+    DebugApkDir =
         Environment.getExternalStorageDirectory().getAbsolutePath() + "/apk/download/";
     // 保存到SD卡路径下
-    File destDir = new File(debugApkDir);
-    CLogUtil.e("TAG1", debugApkDir);
+    File destDir = new File(DebugApkDir);
+    CLogUtil.e("TAG1", DebugApkDir);
     if (!destDir.exists()) {
       // 判断文件夹是否存在
       destDir.mkdirs();
