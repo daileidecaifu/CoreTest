@@ -1,10 +1,9 @@
-package com.example.lorin.helloworld_coretest;
+package com.example.lorin.coretest;
 
 import android.app.Application;
 import android.util.Log;
 
-import com.example.lorin.helloworld_coretest.tool.CustomCrashHandler;
-import com.taobao.weex.InitConfig;
+import com.example.lorin.coretest.tool.CustomCrashHandler;
 import com.taobao.weex.WXEnvironment;
 import com.taobao.weex.WXSDKEngine;
 
@@ -26,7 +25,7 @@ public class CustomApplication extends Application {
         WXEnvironment.addCustomOptions("appName", "TBSample");
         WXSDKEngine.initialize(this, null);
 
-        Log.d("Tag","Git Test");
+        Log.d("Tag", "Git Test");
 
     }
 

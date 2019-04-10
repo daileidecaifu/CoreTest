@@ -1,4 +1,4 @@
-package com.example.lorin.helloworld_coretest.canvas;
+package com.example.lorin.coretest.canvas;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -7,6 +7,12 @@ import android.util.Log;
 import android.util.TypedValue;
 import android.view.WindowManager;
 
+
+/**
+ * @author: [Dai Lei]
+ * @date: 2019 -04-10 Copyright: Copyright (c) 2010-2019
+ * @company: 咪咕视讯
+ */
 public class ScreenUtils {
     private static final String TAG = ScreenUtils.class.getSimpleName();
 

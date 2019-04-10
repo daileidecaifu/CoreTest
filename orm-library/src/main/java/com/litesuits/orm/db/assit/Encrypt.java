@@ -9,7 +9,7 @@ import java.security.NoSuchAlgorithmException;
  * 2014-3-8下午10:58:20
  */
 public final class Encrypt {
-	public static char hexDigits[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
+	private static char[] hexDigits = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
 
 	public static String getMD2EncString(String txt) {
 		return getEncodeString(txt, "MD2");
@@ -41,7 +41,7 @@ public final class Encrypt {
 			digest.update(src.getBytes());
 			byte[] md = digest.digest();
 			int j = md.length;
-			char str[] = new char[j * 2];
+			char[] str = new char[j * 2];
 			int k = 0;
 			for (int i = 0; i < j; i++) {
 				byte byte0 = md[i];

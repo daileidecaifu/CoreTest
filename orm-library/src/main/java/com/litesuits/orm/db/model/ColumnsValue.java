@@ -19,13 +19,13 @@ public class ColumnsValue {
     /**
      * your sql only affect column in this {@link #columns}.
      */
-    public String[] columns;
+    private String[] columns;
 
     /**
      * can be null, if not this will mapping with {@link #columns} 1 by 1.
      * if not null, your columns well aways set value in {@link #values}.
      */
-    public Object[] values;
+    private Object[] values;
 
     private Map<String, Object> map = new HashMap<String, Object>();
 

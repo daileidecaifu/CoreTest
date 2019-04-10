@@ -1,4 +1,4 @@
-package com.example.lorin.helloworld_coretest.object.litepal;
+package com.example.lorin.coretest.object.litepal;
 
 
 /**

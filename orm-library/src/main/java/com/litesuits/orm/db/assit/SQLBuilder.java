@@ -17,6 +17,9 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map.Entry;
 
+/**
+ *
+ */
 public class SQLBuilder {
 
     public static final int TYPE_INSERT = 1;

@@ -100,7 +100,7 @@ public abstract class LiteOrm extends SQLiteClosable implements DataBase {
      * @param config lite-orm config
      * @return {@link CascadeSQLiteImpl}
      */
-    public synchronized static LiteOrm newSingleInstance(DataBaseConfig config) {
+    public static synchronized  LiteOrm newSingleInstance(DataBaseConfig config) {
         return SingleSQLiteImpl.newInstance(config);
     }
 
@@ -121,7 +121,7 @@ public abstract class LiteOrm extends SQLiteClosable implements DataBase {
      * @param config lite-orm config
      * @return {@link CascadeSQLiteImpl}
      */
-    public synchronized static LiteOrm newCascadeInstance(DataBaseConfig config) {
+    public static synchronized  LiteOrm newCascadeInstance(DataBaseConfig config) {
         return CascadeSQLiteImpl.newInstance(config);
     }
 

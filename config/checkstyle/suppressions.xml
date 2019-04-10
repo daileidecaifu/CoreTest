@@ -4,9 +4,16 @@
 <suppressions>
     <!--<suppress checks="InterfaceIsType" files="[\\/]vu[\\/]comp[\\/]Movie\.java$" />-->
     <!--过滤指定类-->
-    <suppress files="ExampleInstrumentedTest\.java" checks="[a-zA-Z0-9]*"/>
+    <suppress files="CrashMarkManual\.java" checks="[a-zA-Z0-9]*"/>
+    <suppress files="CascadeSQLiteImpl\.java" checks="[a-zA-Z0-9]*"/>
+    <suppress files="DataUtil\.java" checks="[a-zA-Z0-9]*"/>
+    <suppress files="TestDownloadService\.java" checks="[a-zA-Z0-9]*"/>
+    <suppress files="LiteOrm\.java" checks="[a-zA-Z0-9]*"/>
+    <suppress files="SQLBuilder\.java" checks="[a-zA-Z0-9]*"/>
+
+
     <!--过滤指定文件夹-->
-    <suppress checks="[a-zA-Z0-9]*" files="[\\/]test[\\/]" />
+    <suppress checks="[a-zA-Z0-9]*" files="[\\/]orm[\\/]" />
 
     <!--<suppress checks="ParameterName"-->
         <!--files="[\\/]dto[\\/]bean[\\/]MoviePriceBean\.java$|[\\/]dto[\\/]pay[\\/]PaySDKDataBean\.java$|[\\/]login[\\/]bean[\\/]UserInfoTokenBean\.java$" />-->

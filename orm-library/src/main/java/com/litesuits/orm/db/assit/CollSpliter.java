@@ -44,6 +44,10 @@ public class CollSpliter {
         return count;
     }
 
+    /**
+     *
+     * @param <T>
+     */
     public interface Spliter<T> {
         int oneSplit(ArrayList<T> list) throws Exception;
     }

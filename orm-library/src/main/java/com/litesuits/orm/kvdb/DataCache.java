@@ -4,17 +4,20 @@ import java.util.List;
 
 /**
  * 数据操作定义
- * 
+ *
  * @author mty
  * @date 2013-6-2上午2:37:56
+ *
+ * @param <K>
+ * @param <V>
  */
 public interface DataCache<K, V> {
-	
-	public Object save(K key, V data);
 
-	public Object delete(K key);
+  Object save(K key, V data);
 
-	public Object update(K key, V data);
+  Object delete(K key);
 
-	public List<V> query(String arg);
+  Object update(K key, V data);
+
+  List<V> query(String arg);
 }

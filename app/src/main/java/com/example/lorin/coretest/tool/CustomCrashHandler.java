@@ -1,4 +1,4 @@
-package com.example.lorin.helloworld_coretest.tool;
+package com.example.lorin.coretest.tool;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -23,10 +23,7 @@ import android.os.Looper;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.example.lorin.helloworld_coretest.CustomApplication;
-import com.example.lorin.helloworld_coretest.object.litepal.CrashMark;
-import com.example.lorin.helloworld_coretest.object.litepal.CrashMarkManual;
-import com.example.lorin.helloworld_coretest.tool.ExitAppUtils;
+import com.example.lorin.coretest.object.litepal.CrashMarkManual;
 
 /**
  * 自定义系统的Crash捕捉类，用Toast替换系统的对话框
@@ -35,7 +32,7 @@ import com.example.lorin.helloworld_coretest.tool.ExitAppUtils;
  * @author Lorin
  */
 
-public class CustomCrashHandler implements UncaughtExceptionHandler {
+public final class CustomCrashHandler implements UncaughtExceptionHandler {
     private static final String TAG = "CRASH_TAG";
     private Context mContext;
     private static final String SDCARD_ROOT = Environment.getExternalStorageDirectory().toString();
@@ -164,12 +161,6 @@ public class CustomCrashHandler implements UncaughtExceptionHandler {
         sb.append("Time").append(" = ").append(createTime).append("\n");
         sb.append(obtainExceptionInfo(ex));
 
-//        //第三方ORM SQL工具
-//        CrashMark crashMark = new CrashMark();
-//        crashMark.setCrashMessage(sb.toString());
-//        crashMark.setCcurrenceTime(createTime);
-//        crashMark.setHasSent(false);
-//        crashMark.save();
         if (null == crashDBManager) {
             crashDBManager = new CrashDBManager(mContext);
         }
@@ -180,7 +171,6 @@ public class CustomCrashHandler implements UncaughtExceptionHandler {
         crashDBManager.add(crashMarkManual);
         crashDBManager.closeDB();
         crashDBManager = null;
-
 
         if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
             File dir = new File(SDCARD_ROOT + File.separator + "crash" + File.separator);
@@ -205,9 +195,7 @@ public class CustomCrashHandler implements UncaughtExceptionHandler {
             }
 
         }
-
         return fileName;
-
     }
 
     /**

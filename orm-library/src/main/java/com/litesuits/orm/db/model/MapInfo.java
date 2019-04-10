@@ -13,6 +13,9 @@ import java.util.ArrayList;
  */
 public class MapInfo {
 
+    /**
+     *
+     */
     public static class MapTable {
         public MapTable(String name, String col1, String col2) {
             this.name = name;
@@ -20,18 +23,19 @@ public class MapInfo {
             this.column2 = col2;
         }
 
-        public String name;
-        public String column1;
-        public String column2;
+        private String name;
+        private String column1;
+        private String column2;
     }
 
-    public ArrayList<MapTable> tableList;
-    public ArrayList<SQLStatement> mapNewRelationSQL;
-    public ArrayList<SQLStatement> delOldRelationSQL;
+    private ArrayList<MapTable> tableList;
+    private ArrayList<SQLStatement> mapNewRelationSQL;
+    private ArrayList<SQLStatement> delOldRelationSQL;
 
     public boolean addTable(MapTable table) {
-        if (table.name == null)
+        if (table.name == null) {
             return false;
+        }
         if (tableList == null) {
             tableList = new ArrayList<MapTable>();
         }

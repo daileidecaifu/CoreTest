@@ -1,4 +1,4 @@
-package com.example.lorin.helloworld_coretest.tool;
+package com.example.lorin.coretest.tool;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -14,7 +14,7 @@ import android.app.Activity;
  * @author xiaanming
  * 
  */
-public class ExitAppUtils {
+public final class ExitAppUtils {
 	/**
 	 * 转载Activity的容器
 	 */

@@ -32,9 +32,9 @@
         </list>
     -->
     <list>
-        <mapping class="com.example.lorin.helloworld_coretest.object.litepal.DBTable1"></mapping>
-        <mapping class="com.example.lorin.helloworld_coretest.object.litepal.DBTable2"></mapping>
-        <mapping class="com.example.lorin.helloworld_coretest.object.litepal.CrashMark"></mapping>
+        <mapping class="com.example.lorin.coretest.object.litepal.DBTable1"></mapping>
+        <mapping class="com.example.lorin.coretest.object.litepal.DBTable2"></mapping>
+        <mapping class="com.example.lorin.coretest.object.litepal.CrashMark"></mapping>
 
     </list>
 </litepal>

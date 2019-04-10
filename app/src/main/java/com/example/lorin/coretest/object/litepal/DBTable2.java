@@ -1,9 +1,6 @@
-package com.example.lorin.helloworld_coretest.object.litepal;
+package com.example.lorin.coretest.object.litepal;
 
 import org.litepal.crud.DataSupport;
-
-import java.util.LinkedList;
-import java.util.List;
 
 /**
  * Created by lorin on 16/1/29.

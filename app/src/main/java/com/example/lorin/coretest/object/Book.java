@@ -1,4 +1,4 @@
-package com.example.lorin.helloworld_coretest.object;
+package com.example.lorin.coretest.object;
 
 import android.os.Parcel;
 import android.os.Parcelable;

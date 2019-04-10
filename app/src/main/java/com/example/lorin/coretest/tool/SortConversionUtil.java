@@ -1,4 +1,4 @@
-package com.example.lorin.helloworld_coretest.tool;
+package com.example.lorin.coretest.tool;
 
 import android.content.Context;
 

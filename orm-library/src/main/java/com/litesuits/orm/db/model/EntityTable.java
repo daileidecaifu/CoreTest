@@ -16,23 +16,23 @@ public class EntityTable implements Serializable {
     /**
      * 实体对应类
      */
-    public Class claxx;
+    private Class claxx;
     /**
      * 实体对应表名
      */
-    public String name;
+    private String name;
     /**
      * 主键
      */
-    public Primarykey key;
+    private Primarykey key;
     /**
      * 属性列表
      */
-    public LinkedHashMap<String, Property> pmap;
+    private LinkedHashMap<String, Property> pmap;
     /**
      * N对N 关系映射表
      */
-    public ArrayList<MapProperty> mappingList;
+    private ArrayList<MapProperty> mappingList;
     /**
      * 是否已对该表进行检查
      */
@@ -54,12 +54,13 @@ public class EntityTable implements Serializable {
 
     @Override
     public String toString() {
-        return "EntityTable{" +
-                "claxx=" + claxx +
-                ", name='" + name + '\'' +
-                ", key=" + key +
-                ", pmap=" + pmap +
-                ", mappingList=" + mappingList +
-                '}';
+        return "EntityTable{"
+            + "claxx=" + claxx
+            + ", name='" + name + '\''
+            + ", key=" + key
+            + ", pmap=" + pmap
+            + ", mappingList="
+            + mappingList
+            + '}';
     }
 }

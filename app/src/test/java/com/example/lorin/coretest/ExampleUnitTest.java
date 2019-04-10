@@ -1,4 +1,4 @@
-package com.example.lorin.helloworld_coretest;
+package com.example.lorin.coretest;
 
 import org.junit.Test;
 
