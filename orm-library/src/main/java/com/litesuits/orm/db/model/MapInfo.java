@@ -23,14 +23,14 @@ public class MapInfo {
             this.column2 = col2;
         }
 
-        private String name;
-        private String column1;
-        private String column2;
+        public String name;
+        public String column1;
+        public String column2;
     }
 
-    private ArrayList<MapTable> tableList;
-    private ArrayList<SQLStatement> mapNewRelationSQL;
-    private ArrayList<SQLStatement> delOldRelationSQL;
+    public ArrayList<MapTable> tableList;
+    public ArrayList<SQLStatement> mapNewRelationSQL;
+    public ArrayList<SQLStatement> delOldRelationSQL;
 
     public boolean addTable(MapTable table) {
         if (table.name == null) {

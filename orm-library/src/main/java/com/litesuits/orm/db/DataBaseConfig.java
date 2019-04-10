@@ -14,10 +14,10 @@ public class DataBaseConfig {
   public static final String DEFAULT_DB_NAME = "liteorm.db";
   public static final int DEFAULT_DB_VERSION = 1;
 
-  private Context context;
-  private String dbName = DEFAULT_DB_NAME;
-  private int dbVersion = DEFAULT_DB_VERSION;
-  private OnUpdateListener onUpdateListener;
+  public Context context;
+  public String dbName = DEFAULT_DB_NAME;
+  public int dbVersion = DEFAULT_DB_VERSION;
+  public OnUpdateListener onUpdateListener;
 
   public DataBaseConfig(Context context) {
     this(context, DEFAULT_DB_NAME);

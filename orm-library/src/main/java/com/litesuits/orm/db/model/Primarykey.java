@@ -14,7 +14,7 @@ import java.lang.reflect.Field;
 public class Primarykey extends Property {
     private static final long serialVersionUID = 2304252505493855513L;
 
-    private AssignType assign;
+    public AssignType assign;
 
     public Primarykey(Property p, AssignType assign) {
         this(p.column, p.field, assign);

@@ -16,23 +16,23 @@ public class EntityTable implements Serializable {
     /**
      * 实体对应类
      */
-    private Class claxx;
+    public Class claxx;
     /**
      * 实体对应表名
      */
-    private String name;
+    public String name;
     /**
      * 主键
      */
-    private Primarykey key;
+    public Primarykey key;
     /**
      * 属性列表
      */
-    private LinkedHashMap<String, Property> pmap;
+    public LinkedHashMap<String, Property> pmap;
     /**
      * N对N 关系映射表
      */
-    private ArrayList<MapProperty> mappingList;
+    public ArrayList<MapProperty> mappingList;
     /**
      * 是否已对该表进行检查
      */

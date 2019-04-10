@@ -36,11 +36,11 @@ public class SQLStatement implements Serializable {
   /**
    * sql语句
    */
-  private String sql;
+  public String sql;
   /**
    * sql语句中占位符对应的参数
    */
-  private Object[] bindArgs;
+  public Object[] bindArgs;
   /**
    * sql语句执行者，私有(private)。
    */

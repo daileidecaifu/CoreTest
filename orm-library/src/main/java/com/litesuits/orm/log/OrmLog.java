@@ -7,7 +7,7 @@ package com.litesuits.orm.log;
  */
 public final class OrmLog {
 
-  private static boolean isPrint = false;
+  public static boolean isPrint = false;
   private static String defaultTag = "OrmLog";
 
   private OrmLog() {

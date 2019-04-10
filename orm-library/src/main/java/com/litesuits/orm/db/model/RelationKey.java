@@ -5,8 +5,8 @@ package com.litesuits.orm.db.model;
  * @date 14-7-24
  */
 public class RelationKey {
-    private String key1;
-    private String key2;
+    public String key1;
+    public String key2;
 
     public boolean isOK() {
         return key1 != null && key2 != null;

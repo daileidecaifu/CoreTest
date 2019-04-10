@@ -12,8 +12,8 @@ import java.lang.reflect.Field;
 public class Property implements Serializable {
 
   private static final long serialVersionUID = 1542861322620643038L;
-  private String column;
-  private Field field;
+  public String column;
+  public Field field;
 
   public Property() {
   }

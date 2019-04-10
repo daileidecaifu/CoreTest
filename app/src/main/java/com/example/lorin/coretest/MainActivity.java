@@ -16,7 +16,8 @@ import com.example.lorin.coretest.object.Student;
 import com.example.lorin.coretest.object.litepal.CrashMarkManual;
 import com.example.lorin.coretest.tool.CLogUtil;
 import com.example.lorin.coretest.tool.CrashDBManager;
-import com.example.lorin.coretest.tool.TestDownloadService;
+import com.example.lorin.helloworld_coretest.R;
+import com.example.lorin.helloworld_coretest.databinding.ActivityMainBinding;
 import com.umeng.analytics.MobclickAgent;
 
 import java.io.File;
@@ -123,16 +124,16 @@ public class MainActivity extends Activity {
   public void click(View view) {
 
     switch (view.getId()) {
-      case R.id.startButton:
-        Log.d("CoreTest", "Click to start!");
-        Intent intent = new Intent(MainActivity.this, TestDownloadService.class);
-        startService(intent);
-        break;
+//      case R.id.startButton:
+//        Log.d("CoreTest", "Click to start!");
+//        Intent intent = new Intent(MainActivity.this, TestDownloadService.class);
+//        startService(intent);
+//        break;
 
-      case R.id.testErrorButton:
-        Log.d("CoreTest", "Click to test Error!");
-        textViewError.setText("111");
-        break;
+//      case R.id.testErrorButton:
+//        Log.d("CoreTest", "Click to test Error!");
+//        textViewError.setText("111");
+//        break;
 
       case R.id.testIntentButton:
         Intent i = new Intent(MainActivity.this, IntentReceiverActivity.class);
@@ -155,11 +156,11 @@ public class MainActivity extends Activity {
         crashDBManager = null;
         break;
 
-      case R.id.WeexButton:
-
-        Intent intent2 = new Intent(MainActivity.this, WeexOneActivity.class);
-        startActivity(intent2);
-        break;
+//      case R.id.WeexButton:
+//
+//        Intent intent2 = new Intent(MainActivity.this, WeexOneActivity.class);
+//        startActivity(intent2);
+//        break;
 
       default:
         break;
